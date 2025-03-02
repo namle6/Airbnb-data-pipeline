@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f4f4f4"/>
+
+  <!-- Google Cloud Storage -->
+  <rect x="50" y="150" width="150" height="100" 
+        fill="#4285F4" rx="10" ry="10" stroke="#000" stroke-width="2"/>
+  <text x="125" y="200" text-anchor="middle" fill="black" font-weight="bold">
+    Google Cloud Storage
+    (Raw CSV Files)
+  </text>
+
+  <!-- Arrow to Dataflow -->
+  <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+  </marker>
+  <line x1="200" y1="200" x2="300" y2="200" 
+        stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Dataflow -->
+  <rect x="300" y="150" width="150" height="100" 
+        fill="#34A853" rx="10" ry="10" stroke="#000" stroke-width="2"/>
+  <text x="375" y="200" text-anchor="middle" fill="black" font-weight="bold">
+    Dataflow
+    (Data Transformation)
+  </text>
+
+  <!-- Arrow to BigQuery -->
+  <line x1="450" y1="200" x2="550" y2="200" 
+        stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- BigQuery -->
+  <rect x="550" y="150" width="150" height="100" 
+        fill="#FF5722" rx="10" ry="10" stroke="#000" stroke-width="2"/>
+  <text x="625" y="190" text-anchor="middle" fill="black" font-weight="bold">
+    BigQuery
+  </text>
+  <text x="625" y="220" text-anchor="middle" fill="black">
+    (Analysis & Insights)
+  </text>
+
+  <!-- Looker Studio Arrow -->
+  <line x1="700" y1="200" x2="750" y2="100" 
+        stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Looker Studio -->
+  <rect x="750" y="50" width="150" height="100" 
+        fill="#673AB7" rx="10" ry="10" stroke="#000" stroke-width="2"/>
+  <text x="825" y="100" text-anchor="middle" fill="black" font-weight="bold">
+    Looker Studio
+    (Visualization)
+  </text>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="20" font-weight="bold" fill="black">
+    Airbnb Data Pipeline Architecture
+  </text>
+</svg>
